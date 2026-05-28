@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">your<span>.</span>name</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label">Say hello</p>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 0.75rem;">Contact Me</h1>
+      <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 480px;">
+        Have a question, opportunity, or just want to connect? I'd love to hear from you.
+      </p>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info">
+          <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem;">
+            Let's get in<br>
+            <span style="color: var(--accent);">touch.</span>
+          </h2>
+          <p>
+            I'm currently open to new opportunities, collaborations, and conversations.
+            Whether you're a potential employer, fellow student, or just curious — reach
+            out through the form or via one of the channels below.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">📧</div>
+              <div>
+                <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.1rem;">Email</div>
+                <div style="color: var(--text-secondary);">yourname@example.com</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.1rem;">Location</div>
+                <div style="color: var(--text-secondary);">Melbourne, Australia</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">🎓</div>
+              <div>
+                <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.1rem;">Institution</div>
+                <div style="color: var(--text-secondary);">La Trobe College Australia</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div style="margin-top: 2.5rem;">
+            <p class="section-label" style="margin-bottom: 1rem;">Find me on</p>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn"
+                 style="width:auto; padding: 0 1rem; gap: 0.5rem; display:flex; align-items: center; font-size: 0.85rem; color: var(--text-secondary);">
+                in &nbsp;LinkedIn
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-link" title="GitHub"
+                 style="width:auto; padding: 0 1rem; gap: 0.5rem; display:flex; align-items: center; font-size: 0.85rem; color: var(--text-secondary);">
+                GH &nbsp;GitHub
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" title="Instagram"
+                 style="width:auto; padding: 0 1rem; gap: 0.5rem; display:flex; align-items: center; font-size: 0.85rem; color: var(--text-secondary);">
+                IG &nbsp;Instagram
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link" title="TikTok"
+                 style="width:auto; padding: 0 1rem; gap: 0.5rem; display:flex; align-items: center; font-size: 0.85rem; color: var(--text-secondary);">
+                TT &nbsp;TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form">
+
+          <form id="contactForm" novalidate>
+            <p class="section-label" style="margin-bottom: 1.5rem;">Send a message</p>
+
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">Full Name <span style="color: var(--accent);">*</span></label>
+              <input type="text" id="name" name="name" placeholder="e.g. Alex Smith" autocomplete="name" />
+              <span class="field-error" id="nameError"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email Address <span style="color: var(--accent);">*</span></label>
+              <input type="email" id="email" name="email" placeholder="e.g. alex@example.com" autocomplete="email" />
+              <span class="field-error" id="emailError"></span>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+              <label for="subject">Subject <span style="color: var(--accent);">*</span></label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+              <span class="field-error" id="subjectError"></span>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">Message <span style="color: var(--accent);">*</span></label>
+              <textarea id="message" name="message" placeholder="Write your message here…"></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="form-btn">Send Message →</button>
+          </form>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3 style="margin-bottom: 0.5rem;">Message sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you as soon as I can.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Your Name. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn">in</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-link" title="GitHub">GH</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" title="Instagram">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link" title="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
